@@ -61,8 +61,8 @@ var sites = {
 			"FFXIV": {
 				"XIVDB"				: "http://xivdb.com/",
 				"FFGuild"			: "http://www.ffxivguild.com/",
-				"G. Data"				: "https://www.garlandtools.org/db/",
-				"G. Bell"		: "https://www.garlandtools.org/bell/",
+				"Garland Data"				: "https://www.garlandtools.org/db/",
+				"Garland Bell"		: "https://www.garlandtools.org/bell/",
 				"Angler"	: "http://ff14angler.com/",
 				"Gardening"			: "http://www.ffxivgardening.com/"
 			},
