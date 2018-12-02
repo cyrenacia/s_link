@@ -1,347 +1,70 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Home</title>
-		<!-- <link rel='stylesheet' type='text/css' href='css/homepage.css'/>
-		<link rel='stylesheet' type='text/css' href='css/fonts.css'/>
-		<script type='text/javascript' src='js/fonticon.js'></script> -->
-	</head>
-	<style>
+<head>
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,200);
-* {
-  margin: 0;
-  padding: 0; }
+	<title>Sanctuary</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-html {
-  background-color: #010101;
- }
-*::-webkit-input-placeholder {
-  opacity: 0.3; }
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="dome.js" defer></script>
 
-.button {
-    float: left;
-}
-
-.total-container {
-  height: 100vh;
-  width: 100%;
-  background: #010101;
-  opacity: 1;
-  font-size: 11px;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
-
-p, li, a, h1, h3 {
-  color: #7C1AA4;
-  font-family: "Roboto", "Consolas", "Helvetica", sans-serif;
-  font-weight: 400;`
-  letter-spacing: 2px; }
-
-.container {
-  height: 790px;
-  width: 90%;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.favorites {
-  width: 90%;
-  margin: 10px auto 0 auto;
-  text-align: center; }
-
-.favorites p {
-  border-bottom: 1px solid #7C1AA4;
-  padding-right: 100%; }
-
-.list {
-  display: inline-block;
-  width: 20%;
-  margin: 0 15px;
-  vertical-align: text-top; }
-
-.list ul {
-  list-style-type: none; }
-
-a {
-  text-decoration: none;
-  display: block;
-  padding: 3px; }
-  a:hover {
-    color: #fff;
-    background: #7C1AA4; }
-
-#toplinkj:hover {
-	color: #fff;
-	background: #0f198c;
-}
-
-#toplinkg:hover {
-	color: #fff;
-	background: #7C1AA4;
-}
-
-#toplinka:hover {
-	color: #fff;
-	background: #a0233a;
-}
-
-/**
-.toplink * {
-  color: #7C1AA4;
-    text-decoration: none;
-  display: inline;
-  font-family: "Roboto", "Consolas", "Helvetica", sans-serif;
-  font-weight: 400;`
-  letter-spacing: 2px;
-  padding: 0px;
-}
-**/
-.googles {
-  width: 90%;
-  margin: 25px auto;
-  text-align: center; }
-
-.googles p {
-  display: inline-block;
-  width: 25%;
-  margin: 10px 10px;
-  border: 1px solid #7C1AA4; }
-
-form {
-  width: 90%;
-  margin: auto;
-  padding: 5px;
-  text-align: center;
-  position: relative; }
-
-.search {
-  width: 400px;
-  height: 15px;
-  text-align: center;
-  margin-right: -4px;
-  padding: 5px;
-  background: #000;
-  font-family: "Roboto", "Consolas", "Helvetica", sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color: #7C1AA4;
-  border: 1px solid #7C1AA4; }
-  .search:hover {
-    border: 1px solid #6BB9F0; }
-  .search:focus {
-    outline: none;
-    border: 1px solid #6BB9F0; }
-
-.go {
-  vertical-align: top;
-  height: 27px;
-  width: 40px;
-  background: #000;
-  color: #7C1AA4;
-  border: 1px solid #7C1AA4; }
-  .go:hover {
-    background: #7C1AA4;
-    color: #fff;
-    cursor: pointer; }
-  .go:focus {
-    outline: none; }
-
-
+	<style type="text/css">
+		body > div#main > span > div#static_links {
+			height: 30px;
+		}
+		body > div#main > span > form > input {
+			border: none;
+			height: 25px;
+		}
+		div#links > div.section {
+			display: inline-block;
+			vertical-align: top;
+			height: auto;
+			width: 300px;
+			margin: 2px;
+		}
+		div#links > div.section > div {
+			padding: 8px;
+		}
+		div#wiper {
+			display: block;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #010101;
+			opacity: 1;
+			z-index: 100;
+			<!--transition: .5s opacity .5s, .5s z-index .5s;-->
+		}
+		html, body {
+			margin: 0;
+			background-color: #000;
+		}
 	</style>
-	<body>
-		<div class='total-container'>
-			<div class='container'>
-				<div class='favorites'>
-				
-				<h1><a href='http://steamcommunity.com/profiles/76561198047779830' id='toplinkj' style='display:inline; padding: 0px'>San</a><a href='https://steamcommunity.com/groups/icefoxy' id='toplinkg' style='display:inline; padding: 0px'>ctu</a><a href='http://steamcommunity.com/profiles/76561198064372589' id='toplinka' style='display:inline; padding: 0px'>ary</a></h1>
 
-				<br>
-					<h2><a href='http://127.0.0.1/'>Localhost</a></h2>
-				<br>
-				<form method="get" action="https://www.google.com/search"> 
-					<input class='search' align='right' name='q' type='text' placeholder='Google' autofocus> 
-					<!-- <button class='go' type='submit'><i class='icon icon-search'></i></button> -->
-				</form>
-				<form id='vb_yt_search-form' target='_blank' method="get" action="http://www.youtube.com/results"> 
-					<input id='vb_yt_search-form' class='search' align='right' name='search_query' type='text' placeholder='Youtube'/> 
-					<!-- <button class='go' type='submit'><i class='icon icon-search'></i></button> -->
-				</form>				
-				<br>
+</head>
+<body>
 
-					<div class='list youtube'>
-						<p><a href='https://www.youtube.com/feed/subscriptions'>Youtube</a></p>
-						<ul>
-							<li><a href='https://www.youtube.com/user/gamesdonequick/videos'>GDQ</a></li>
-							<li><a href='https://www.youtube.com/user/XboxAhoy/videos'>Ahoy</a></li>
-							<li><a href='https://www.youtube.com/channel/UCyhnYIvIKK_--PiJXCMKxQQ/videos'>Joseph Anderson</a></li>
-							<li><a href='https://www.youtube.com/channel/UCfYbb7nga6-icsFWWgS-kWw/videos'>Mister Metokur</a></li>
-							<li><a href='https://www.youtube.com/user/SovietWomble/videos'>SovietWomble</a></li>
-							<li><a href='https://www.youtube.com/playlist?list=PLesZst-z4ywbra_EUrjRR9WkeFdmabw_1'>Lore of Middle Earth</a></li>
-							<li><a href='https://www.youtube.com/channel/UCDk8PJoNRa3L7xOrzEUkYig/playlists'>Tagg Vods</a></li>
-							<li><a href='https://www.youtube.com/user/enyay/videos'>Tom Scott</a></li>
-						</ul>
-					</div>
+	<div id="wiper"></div>
 
-					<div class='list reddit'>
-						<p><a href='https://old.reddit.com'>Subreddits</a></p>
-						<ul>
-							<li><a href='https://old.reddit.com/r/gamemusic/'>Game Music</a></li>
-							<li><a href='https://old.reddit.com/r/Steam/'>Steam</a></li>
-							<li><a href='https://old.reddit.com/r/ffxiv/'>FFXIV</a></li>
-							<li><a href='https://old.reddit.com/r/Vermintide/'>Vermintide</a></li>
-							<li><a href='https://old.reddit.com/r/GameDeals/'>Game Deals</a></li>
-							<li><a href='https://old.reddit.com/r/technology/'>Technology</a></li>
-							<li><a href='https://old.reddit.com/r/DataHoarder/'>Data Hoarding</a></li>
-							<li><a href='https://old.reddit.com/r/datacurator/'>Data Curation</a></li>
-						</ul>
-					</div>
-
-					<div class='list twitch'>
-						<p><a href='https://www.twitch.tv'>Twitch</a></p>
-						<ul>
-							<li><a href='https://www.twitch.tv/shroud'>Shroud</a></li>
-							<li><a href='https://www.twitch.tv/gamesdonequick'>GDQ</a></li>
-							<li><a href='https://www.twitch.tv/sovietwomble'>SovietWomble</a></li>
-							<li><a href='https://www.twitch.tv/longlivequebec'>Quebec</a></li>
-							<li><a href='https://www.twitch.tv/totalbiscuit'>Totalbiscuit</a></li>
-							<li><a href='blank'>-</a></li>
-							<li><a href='blank'>-</a></li>
-							<li><a href='blank'>-</a></li>
-						</ul>
-					</div>
-
-					<div class='list 4chan'>
-						<p><a href='https://www.4chan.org'>4chan</a></p>
-						<ul>
-							<li><a href='https://boards.4chan.org/a/catalog'>/a/</a></li>
-							<li><a href='https://boards.4chan.org/b/catalog'>/b/</a></li>
-							<li><a href='https://boards.4chan.org/c/catalog'>/c/</a></li>
-							<li><a href='https://boards.4chan.org/g/catalog'>/g/</a></li>
-							<li><a href='https://boards.4chan.org/v/catalog'>/v/</a></li>
-							<li><a href='https://boards.4chan.org/w/catalog'>/w/</a></li>
-							<li><a href='https://boards.4chan.org/wg/catalog'>/wg/</a></li>
-							<li><a href='https://boards.4chan.org/x/catalog'>/x/</a></li>
-						</ul>
-					</div>
-
-
-
-
-
-
-
-
-					<div class='list booru'>
-						<p><a href='Konachan Yande.re Danbooru'>Booru's</a></p>
-						<ul>
-							<li><a href='https://gelbooru.com/'>Gelbooru</a></li>
-							<li><a href='https://chan.sankakucomplex.com/'>Sankaku</a></li>
-							<li><a href='https://www.zerochan.net/'>Zerochan</a></li>
-                            <li><a href='http://tbib.org/'>TBIB</a></li>                          
-                            <li><a href='http://vector.booru.org/'>VectorBooru</a></li>
-						</ul>
-					</div>
-
-					<div class='list csgo'>
-						<p><a href='http://blog.counter-strike.net/'>CSGO/Shop</a></p>
-						<ul>
-							<li><a href='https://csgostash.com/'>Csgo Stash</a></li>
-							<li><a href='https://www.faceit.com'>FaceIt</a></li>
-                            <li><a href='http://www.ebay.co.uk/'>Ebay</a></li>
-                            <li><a href='https://www.amazon.co.uk/'>Amazon</a></li>
-                            <li><a href='https://www.etsy.com/uk/'>Etsy</a></li>
-						</ul>
-					</div>
-
-					<div class='list imageindex'>
-						<p><a href='AAAAAAA'>ImageIndex</a></p>
-						<ul>
-                            <li><a href='https://iqdb.org/'>IQDB</a></li>
-                            <li><a href='https://www.tineye.com/'>Tineye</a></li>
-                            <li><a href='https://images.google.co.uk/'>Google Image</a></li>
-                            <li><a href='https://www.imageraider.com/'>ImageRaider</a></li>
-                            <li><a href='https://yandex.com/'>Yandex</a></li>
-						</ul>
-					</div>
-
-					<div class='list minecraft'>
-						<p><a href='https://minecraft.gamepedia.com/index.php?search=&title=Special%3ASearch&go=Go'>Minecraft</a></p>
-						<ul>
-							<li><a href='https://mcstacker.bimbimma.com/'>Command Generator</a></li>
-							<li><a href='http://minecraft.tools/en/book.php'>Custom Book</a></li>
-							<li><a href='http://minecraft.tools/en/flat.php'>Flatland</a></li>
-							<li><a href='http://minecraft.tools/en/banner.php'>Banner</a></li>
-							<li><a href='http://minecraft.tools/en/index-text-generator.php'>Text Generator</a></li>
-						</ul>
-					</div>
-
-
-
-
-
-
-
-
-					<div class='list ffxiv'>
-						<p><a href='http://www.xivdb.com'>FFXIV</a></p>
-						<ul>
-							<li><a href='http://xivdb.com/'>XIVDB</a></li>
-							<li><a href='http://www.ffxivguild.com/'>FFGuild</a></li>
-							<li><a href='https://www.garlandtools.org/bell/'>G. Bell</a></li>
-							<li><a href='https://www.garlandtools.org/db/'>G. Data</a></li>
-							<li><a href='http://ff14angler.com/'>Angler</a></li>
-							<li><a href='http://www.ffxivgardening.com/'>Gardening</a></li>
-							<li><a href='http://ffxivtriad.com/rules'>Triad</a></li>
-							<li><a href='https://vistas.explorexiv.com/'>Sights</a></li>
-							<li><a href='https://secure.square-enix.com/oauth/oa/oauthlogin?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dinfo&client_id=account_manage&logout=done&facflg=1'>Mogstation</a></li>
-						</ul>
-					</div>
-
-					<div class='list twitters'>
-						<p><a href='no porn ty'>Twitters</a></p>
-						<ul>
-							<li><a href='https://twitter.com/WeWuzMetokur?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'>Metokur</a></li>
-							<li><a href='Honestabe'>-</a></li>
-							<li><a href='AAAAAAA'>-</a></li>
-							<li><a href='AAAAAAA'>-</a></li>
-							<li><a href='AAAAAAA'>-</a></li>
-						</ul>
-					</div>
-
-					<div class='list fav-dev'>
-						<p><a href='aaaaaaaaa'>aaaaaaaaaaaa</a></p>
-						<ul>
-							<li><a href='AAAAAAA'>-</a></li>
-						</ul>
-					</div>
-
-					<div class='list utility'>
-						<p><a href='eh'>Utilities</a></p>
-						<ul>
-							<li><a href='https://store.steampowered.com/steamaccount/addfunds'>Steam Wallet</a></li>
-							<li><a href='https://sourceforge.net/speedtest/?source=sfnet_header'>SourceForge Speedtest</a></li>
-							<li><a href='http://downforeveryoneorjustme.com/'>Down for everyone or just me</a></li>
-							<li><a href='https://www.issteamdown.com/'>Is Steam Down?</a></li>
-							<li><a href='https://steamstat.us/'>SteamStat</a></li>
-							<li><a href='http://www.whatsmyip.org/'>What's my IP</a></li>
-							<li><a href='AAAAAAA'>-</a></li>
-							<li><a href='AAAAAAA'>-</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-				<div class='googles'>
-                    <li><a href='https://store.steampowered.com/steamaccount/addfunds'>Steam Wallet</a></li>
-				</div>
+	<div id="main" style="max-width: 912px;">
+		<span>
+			<div id="static_links">
+				<span style='color: #7C1AA4'>
+					Sanctuary
+				</span>
+				<a href="steam:">Open Steam</a>
+				<!--<a href="https://duckduckgo.com/?q=fingers+circle+joke&iax=images&ia=images">Bank Details</a>-->
 			</div>
-		</div>
-	</body>
+			<form method="GET" id="action">
+				<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
+			</form>
+			<div id="links">
+				<!-- dome.js: matchLinks() fills this element -->
+			</div>
+		</span>
+	</div>
+
+</body>
 </html>
