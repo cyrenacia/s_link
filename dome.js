@@ -103,10 +103,10 @@ var sites = {
 				"Terraria"			: "steam://run/105600"
 			},
 			"Twitch": {
-				"CS:GO"				: "https://www.twitch.tv/shroud",
-				"Besiege"			: "https://www.twitch.tv/gamesdonequick",
-				"Rust"				: "https://www.twitch.tv/sovietwomble",
-				"Insurgency"		: "https://www.twitch.tv/longlivequebec",
+				"Shroud"				: "https://www.twitch.tv/shroud",
+				"GDQ"			: "https://www.twitch.tv/gamesdonequick",
+				"Soviet Womble"				: "https://www.twitch.tv/sovietwomble",
+				"Quebec"		: "https://www.twitch.tv/longlivequebec",
 			},
 			"-": {
 				"-"				: "-",
