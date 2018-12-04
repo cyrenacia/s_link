@@ -108,8 +108,10 @@ var sites = {
 				"Soviet Womble"				: "https://www.twitch.tv/sovietwomble",
 				"Quebec"		: "https://www.twitch.tv/longlivequebec",
 			},
-			"-": {
-				"-"				: "-",
+			"Email": {
+				"Gmail"				: "https://mail.google.com/mail/u/1/#inbox",
+				"Hotmail"	:	"https://login.live.com/login.srf?wa=wsignin1.0&ct=1424295713&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail",
+				"Protonmail"	:	"https://mail.protonmail.com/inbox"
 			},
 		};
 
