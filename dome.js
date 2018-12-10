@@ -115,7 +115,7 @@ var sites = {
 			},
 		};
 
-var search = "http://google.com/search";		// The search engine
+var search = "https://google.com/search";		// The search engine
 var query  = "q";							// The query variable name for the search engine
 
 // ---------- BUILD PAGE ----------
