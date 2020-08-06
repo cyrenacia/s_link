@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sanctuary</title>
+		<title>λ</title>
 		<!-- <link rel='stylesheet' type='text/css' href='css/homepage.css'/>
 		<link rel='stylesheet' type='text/css' href='css/fonts.css'/>
 		<script type='text/javascript' src='js/fonticon.js'></script> -->
@@ -36,17 +36,22 @@ html {
   background: #000;
   opacity: 1;
   font-size: 11px;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
 p, li, a, h1, h3 {
-  color: #7C1AA4;
-  font-family: "Consolas", "Helvetica", sans-serif;
-  font-weight: 400;`
+  color: #551a1a;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-weight: 600;`
   letter-spacing: 2px; }
+
+.sectitle {
+  color: #722d11;
+  font-style: 'italic';
+}
 
 .container {
   height: auto;
@@ -68,7 +73,7 @@ p, li, a, h1, h3 {
 }
 
 .favorites p {
-  border-bottom: 1px solid #7C1AA4;
+  border-bottom: 1px solid #9e4217;
   padding-right: 100%; }
 
 .list {
@@ -85,8 +90,8 @@ a {
   display: block;
   padding: 3px; }
   a:hover {
-    color: #fff;
-    background: #7C1AA4; }
+    color: rgb(255, 255, 255);
+    background: #300f0f; }
 
 #toplinkj:hover {
 	color: #fff;
@@ -133,13 +138,13 @@ form {
   font-family: "Roboto", "Consolas", "Helvetica", sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
-  color: #7C1AA4;
-  border: 1px solid #7C1AA4; }
+  color: #976E62;
+  border: 1px solid #8C7743; }
   .search:hover {
-    border: 1px solid #6BB9F0; }
+    border: 1px solid #dbac33; }
   .search:focus {
     outline: none;
-    border: 1px solid #6BB9F0; }
+    border: 1px solid #ffd700; }
 
 .go {
   vertical-align: top;
@@ -188,7 +193,7 @@ ul {
 
                 <div class='favorites'>
 					<div class='list youtube'>
-						<p><a href='https://www.youtube.com/feed/subscriptions' style='font-size: 14px; display:inline; padding: 0px'>Youtube</a></p>
+						<p><a href='https://www.youtube.com/feed/subscriptions' class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>Youtube</a></p>
 						<ul>
 							<li><a href='https://www.youtube.com/user/gamesdonequick/videos'>GDQ</a></li>
 							<li><a href='https://www.youtube.com/user/XboxAhoy/videos'>Ahoy</a></li>
@@ -202,7 +207,7 @@ ul {
 					</div>
 
 					<div class='list reddit'>
-						<p><a href='https://old.reddit.com' style='font-size: 14px; display:inline; padding: 0px'>Subreddits</a></p>
+						<p><a href='https://old.reddit.com' class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>Subreddits</a></p>
 						<ul>
                             <li><a href='https://old.reddit.com/r/factorio/'>Factorio</a></li>
 							<li><a href='https://old.reddit.com/r/Steam/'>Steam</a></li>
@@ -216,7 +221,7 @@ ul {
 					</div>
 
 					<div class='list ffxiv'>
-                        <p><a style='font-size: 14px; display:inline; padding: 0px'>FFXIV</a></p>
+                        <p><a class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>FFXIV</a></p>
                         <ul>
                             <li><a href='http://www.ffxivguild.com/'>FFGuild</a></li>
                             <li><a href='https://www.garlandtools.org/bell/'>G. Bell</a></li>
@@ -229,7 +234,7 @@ ul {
 					</div>
 
 					<div class='list 4chan'>
-						<p><a href='https://www.4chan.org' style='font-size: 14px; display:inline; padding: 0px'>4chan</a></p>
+						<p><a href='https://www.4chan.org' class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>4chan</a></p>
 						<ul>
 							<li><a href='https://boards.4chan.org/a/catalog'>/a/</a></li>
 							<li><a href='https://boards.4chan.org/b/catalog'>/b/</a></li>
@@ -250,7 +255,7 @@ ul {
 
 
 					<div class='list booru'>
-						<p><a style='font-size: 14px; display:inline; padding: 0px'>Booru's</a></p>
+						<p><a class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>Booru's</a></p>
 						<ul>
 							<li><a href='http://tbib.org/'>TBIB</a></li>
 							<li><a href='https://gelbooru.com/'>Gelbooru</a></li>
@@ -261,7 +266,7 @@ ul {
 					</div>
 
 					<div class='list imageindex'>
-						<p><a style='font-size: 14px; display:inline; padding: 0px'>Indexing</a></p>
+						<p><a class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>Indexing</a></p>
 						<ul>
 							<li><a href='https://saucenao.com/'>SauceNao</a></li>
 							<li><a href='https://iqdb.org/'>IQDB</a></li>
@@ -272,7 +277,7 @@ ul {
 					</div>
 
 					<div class='list steam'>
-						<p><a href='https://store.steampowered.com/' style='font-size: 14px; display:inline; padding: 0px'>Steam</a></p>
+						<p><a href='https://store.steampowered.com/' class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>Steam</a></p>
 						<ul>
 							<li><a href='https://store.steampowered.com/steamaccount/addfunds'>Steam Wallet</a></li>
 							<li><a href='https://www.issteamdown.com/'>Is Steam Down?</a></li>
@@ -283,7 +288,7 @@ ul {
 					</div>
 
 					<div class='list twitch'>
-                        <p><a href='https://www.twitch.tv' style='font-size: 14px; display:inline; padding: 0px'>Twitch</a></p>
+                        <p><a href='https://www.twitch.tv' class='sectitle' style='font-size: 14px; display:inline; padding: 0px'>Twitch</a></p>
                         <ul>
                             <li><a href='https://www.twitch.tv/shroud'>Shroud</a></li>
                             <li><a href='https://www.twitch.tv/gamesdonequick'>GDQ</a></li>
